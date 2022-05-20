@@ -11,9 +11,10 @@ for (let i=0; i<4; i++) {
 }
 
 // 1.a. TODO: Write a for loop to console.log the numbers from 0 to 5 
-//   - Which part of the example loop do you need to change to do this? --> The condition needs to change to <6.
+//   - Which part of the example loop do you need to change to do this? --> The condition needs to change to i<6 or i<=5.
 console.log('count from 0 to 5');
-for (let i=0; i<6; i++){
+
+for (let i=0; i<=5; i++){
   console.log(i)
 }
 
@@ -21,7 +22,7 @@ for (let i=0; i<6; i++){
 // 1.b. TODO: Write a for loop to console.log the numbers from 3 to 5
 //   - Which part of the example loop do you need to change to do this? ---> The variable needs to start at i=3.
 console.log('count from 3 to 5');
-for (let i=3; i<6; i++){
+for (let i=3; i<=5; i++){
   console.log(i)
 }
 
@@ -51,11 +52,23 @@ console.log('Some stars:');
 // 3. While loops  
 console.log('---- 3. While loop ----');
 
+
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
 
+let i=0;
+while(i<stars.length){
+  console.log(stars[i]);
+  i++;
+}
+
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
+let b=0
+while(b<6){
+  console.log(b);
+  b++;
+}
 
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
